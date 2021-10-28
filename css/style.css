@@ -1,47 +1,58 @@
-div {
-  border-radius: 5px;
-  background-color: #F6F6F6;
-  padding: 10px 10px;
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------- ######### loading side ######### ----------------------------------------*/
+
+.load_page img{
+  box-shadow: none;
 }
 
-label {
-  padding: 12px 12px 12px 0;
-  display: inline-block;
-  font-size: 16px;
-  font-weight: bold;
-}
-
-
-input[type=text], [type=email], [type=date], [type=number], select {
-  width: 50%;
-  padding: 10px 15px;
-  margin: 5px 0;
-  display: inline-block;
-  border: 1px solid #C0C0C0;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-
-input[type=radio], select {
-  width: 5%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #C0C0C0;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-
-input[type=submit] {
+.load_page {
+  position: fixed;
+  text-align: center;
+  background-color: black;
+  height: 100%;
   width: 100%;
-  background-color: #4169E1;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  border-radius: 4px;
+  margin-top: 200px;
+  left: 0;
+  z-index: 1;
+  -webkit-animation: load-out 1s;
+  animation: load-out 2s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
 }
 
-input[type=submit]:hover {
-  background-color: #0000CD;
+@-webkit-keyframes load-out {
+  from {
+      top: 0;
+      opacity: 1;
+  }
+
+  to {
+      bottom: 100%;
+      opacity: 0;
+  }
 }
+
+@keyframes load-out {
+  from {
+      top: 0;
+      opacity: 1;
+  }
+
+  to {
+      bottom: 100%;
+      opacity: 0;
+  }
+}
+
+/* inspo: https://stackoverflow.com/questions/244183/how-to-display-a-loading-screen-while-site-content-loads */
+
