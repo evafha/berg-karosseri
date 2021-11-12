@@ -52,6 +52,16 @@ html {
   background-color: #0099cc;
 }
 
+li a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
 .aside {
   background-color: #33b5e5;
   padding: 15px;
