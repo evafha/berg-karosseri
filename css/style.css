@@ -23,24 +23,25 @@ body {
   padding: 15px;
 }
 
-h1 {
-
+h1 { /* Header tekst */
+  font-size: ;
 }
 
-h2 {
-  
+h2 { /* Hovedoverskrifter */
+  font-size: ;
 }
 
-h3 {
-  
+h3 { /* Meny plassering */
+  font-size: ;
 }
 
-h4 {
-  color: aquamarine;
+h4 { /* Bildetekst */
+  font-size: 9px;
+  margin-top: -1px;
 }
 
 p {
-  
+  font-size: ;
 }
 
 /*=============================================
@@ -265,6 +266,11 @@ slideshow
   height: auto;
   float: left;
   padding: 10px;
+}
+
+.bjarne img{
+  width: 100%;
+  height: auto  
 }
 
 /*=====  End of om oss comment block  ======*/
