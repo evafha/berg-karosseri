@@ -1,18 +1,23 @@
+* {
+  box-sizing: border-box; /*This makes sure that the padding and border are included in the total width and height of the elements.*/
+}
+
 html {
-  width: ;
+  width: 100%;
 }
 
 body {
   margin: 0;
   font-family: ;
   width: 100%;
-  padding: ;
+  min-height: 100%;
+  position: absolute;
+  float: left;
 }
 
 h2 {
   text-align: center;
 }
-
 
 /*=============================================
 =                     Header                 =
@@ -61,8 +66,10 @@ h2 {
 =============================================*/
 .grid_container_footer {
   display: grid;
-  grid-template-columns: auto auto auto auto;
-  width: 100%;
+  grid-template-columns: 33.33% 33.33% 33.33%;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
 }
 
 .grid_container_footer div {
@@ -71,13 +78,15 @@ h2 {
   border-style: solid;
   padding-top: ;
   text-align: center;
+  padding: 20px 0;
 }
 
 footer {
-  position: absolute;
-  left: 0;
+  position: relative;
+  right: 0;
   bottom: 0;
-  height: 200px;
+  left: 0;
+  margin-top: auto;
 }
 
 .footer_1 {
@@ -91,25 +100,95 @@ footer {
 .footer_3 {
   background-color: burlywood;
 } 
-
-.footer_4 {
-  background-color: brown;
-}
   
 /*=============================================
-=                 Index_about                 =
+=             grid_container_0               =
 =============================================*/
+.grid_container_0 {
+  display: grid;
+  grid-template-columns: auto;
+  background-color: red;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.grid_container_0 div {
+  width: 100%;
+  padding: 20px; /*rundt teksten*/
+  border-style: solid;
+  padding-top: ;
+  text-align: center;
+}
 
 /*=============================================
-=                    What                     =
+=              grid_container_1               =
 =============================================*/
 .grid_container_1 {
   display: grid;
-  grid-template-columns: auto auto auto;
-  width: 100%;
+  grid-template-columns: auto;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .grid_container_1 div {
+  width: 100%;
+  padding: 20px; /*rundt teksten*/
+  border-style: solid;
+  padding-top: ;
+  text-align: center;
+}
+/*=============================================
+=             grid_container_1.1              =
+=============================================*/
+.grid_container_1_1 {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.grid_container_1_1 div {
+  width: 100%;
+  border-style: solid;
+  padding-top: ;
+  text-align: center;
+}
+
+.grid_container_1_1 img {
+  width: 250px;
+  height: auto;
+}
+
+.grid_container_1_1 p {
+  text-align: center;
+}
+
+.knapp_t {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 50%;
+  margin-right: 50%;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/*=============================================
+=              grid_container_2               =
+=============================================*/
+.grid_container_2 {
+  display: grid;
+  grid-template-columns: 33.33% 33.33% 33.33%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.grid_container_2 div {
   width: 100%;
   padding: 20px; /*rundt teksten*/
   border-style: solid;
@@ -130,8 +209,73 @@ footer {
 } 
 
 /*=============================================
+=              grid_container_3               =
+=============================================*/
+.grid_container_3 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.grid_container_3 div {
+  width: 100%;
+  padding: 20px; /*rundt teksten*/
+  border-style: solid;
+  padding-top: ;
+  text-align: left;
+}
+
+.grid_container_3 img {
+  width: 300px;
+  height: auto;
+}
+
+.knapp_o {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  justify-content: center;
+}
+
+/*=============================================
+=               grid_container_4              =
+=============================================*/
+
+.grid_container_4 {
+  display: grid;
+  grid-template-columns: 25% 25%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.grid_container_4 div {
+  width: 100%;
+  padding: 20px; /*rundt teksten*/
+  border-style: solid;
+  padding-top: ;
+  text-align: left;
+}
+
+.grid_container_5 {
+  position: relative;
+  display: grid;
+  grid-template-columns: 50%;
+  max-width: 1200px;
+  
+}
+
+
+/*=============================================
 =                     Navbar                  =
 =============================================*/
+
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {display: none;}
@@ -153,5 +297,27 @@ footer {
     float: none;
     display: block;
     text-align: left;
+  }
+}
+
+/*=============================================
+=                     Grids                   =
+=============================================*/
+
+@media (max-width: 900px) {
+  .grid_container_1_1 { 
+    grid-template-columns: repeat(2, 1fr); 
+  }
+}
+
+
+@media (max-width: 600px) {
+  .grid_container_footer,
+  .grid_container_0,
+  .grid_container_1,
+  .grid_container_1_1,
+  .grid_container_2,
+  .grid_container_3 { 
+    grid-template-columns: repeat(1, 1fr); 
   }
 }
