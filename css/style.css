@@ -13,11 +13,27 @@ body {
   min-height: 100%;
   position: absolute;
   float: left;
-  background-color: ;
+  background-color: white;
+}
+
+h1 {
+  text-align: center;
+  color: #242494;
+  text-decoration: ;
 }
 
 h2 {
   text-align: center;
+  color: #242494;
+  text-decoration: ;
+}
+
+h4 {
+  font-size: 15px;
+  margin-bottom: 0px; /* space under overskrift*/
+  padding-bottom: 0px;
+  line-height: 0px;
+  color: white;
 }
 
 p {
@@ -27,8 +43,12 @@ p {
 /*=============================================
 =                     Header                 =
 =============================================*/
+header {
+  text-align: center
+}
+
 .header img {
-  width: ;
+  width: 1200px;
   height: auto;
 }
 
@@ -36,29 +56,41 @@ p {
 =                     Navbar                  =
 =============================================*/
 .topnav img {
-  width: 30px;
+  width: 50px;
   height: auto;
+  filter: brightness(0) invert(1);
 }
 
 .topnav {
   overflow: hidden; /*prevents scrollbars from appearing*/
-  background-color: #7CB3C5;
+  background-color: #242494;
+  /*box-shadow: inset 0 -1px 0 0 #242494;*/
+  display: flex;
+  justify-content: center;
 }
 
 .topnav a {
   float: left; /*https://developer.mozilla.org/en-US/docs/Web/CSS/float*/
   display: block; /*Takes up the full width available, with a new line before and after*/
   color: white; /*Farge på tekst i navbar*/
-  text-align: center;
   padding: 14px; /* skaper avstand mellom teksten: top, left, bottom, left*/
   text-decoration: none; /*fjerner understreking på link*/
   font-size: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  letter-spacing: 1px;
 }
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: #000080;
-  color: white;
+  background-color: white;
+  color: #242494;
+  filter: none;
+}
+
+/* Change the color of links on hover */
+a:hover img{
+  filter: none;
 }
 
 /*Fjerner ikon når skjermen e stor*/
@@ -71,19 +103,20 @@ p {
 =============================================*/
 .grid_container_footer {
   display: grid;
-  grid-template-columns: 33.33% 33.33% 33.33%;
+  grid-template-columns: 25% 25% 25% 25%;
   max-width: 1200px;
   margin: 0 auto;
   position: relative;
+  background-color: #242494;
 }
 
 .grid_container_footer div {
   width: 100%;
-  padding: 20px; /*rundt teksten*/
-  border-style: solid;
+  padding: 10px; /*rundt teksten*/
+  border-style: ;
   padding-top: ;
   text-align: center;
-  padding: 20px 0;
+  height: 100px;
 }
 
 footer {
@@ -94,20 +127,100 @@ footer {
   margin-top: auto;
 }
 
-.footer_1 {
-  background-color: #93B6DC;
-} 
+.footer_0 img {
+  width: 150px;
+  height: auto;
+}
 
-.footer_2 {
-  background-color: #B2CBE6;
-} 
+.footer_0  {
+  background-color: white;
+  color: black;
+  font-size: 10px;
+}
 
-.footer_3 {
-  background-color: #93B6DC;
-} 
+.footer_4 {
+  border-top: 1px solid white;
+  background-color: #e5e5e5;
+  font-size: 10px;
+  padding: 0 0 0 5px;
+  margin: 0;
+}
+
+.footer_1,
+.footer_2,
+.footer_3  {
+  color: white;
+}
+
+a:link,
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+/*=============================================
+=                 Footer forside              =
+=============================================*/
+.grid_container_footer_forside {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  background-color: #242494;
+  text-align: center;
+  border-top: #242494;
+  border-top-style: solid;
+}
+
+.car {
+  transform: rotateY(180deg);
+}
+
+/*=============================================
+=                   Forside                   =
+=============================================*/
+.forside {
+  color: black;
+}
+
+/* unvisited link */ /* visited link */
+a.forside:link,
+a.forside:visited {
+  color: black;
+  text-decoration: none;
+}
+
+/* mouse over link */
+a.forside:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+/*=============================================
+=           grid_container_start_1             =
+=============================================*/
+.grid_container_start_1 {
+  display: grid;
+  grid-template-columns: 33.33% 33.33% 33.33%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.grid_container_start_1 div {
+  width: 100%;
+  padding: 20px; /*rundt teksten*/
+  border-style: ;
+  border: ;
+  padding-top: ;
+  text-align: center;
+}
+.grid_container_start_1 img {
+  width: 150px;
+}
   
 /*=============================================
-=             grid_container_0               =
+=             grid_container_0              =
 =============================================*/
 .grid_container_0 {
   display: grid;
@@ -120,171 +233,306 @@ footer {
 .grid_container_0 div {
   width: 100%;
   padding: 20px; /*rundt teksten*/
-  border-style: solid;
+  border-style: ;
   padding-top: ;
   text-align: center;
 }
 
 /*=============================================
-=              grid_container_1               =
+=              grid_container_1_2               =
 =============================================*/
-.grid_container_1 {
-  display: grid;
-  grid-template-columns: auto;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.grid_container_1 div {
-  width: 100%;
-  padding: 20px; /*rundt teksten*/
-  border-style: solid;
-  padding-top: ;
-  text-align: center;
-}
-/*=============================================
-=             grid_container_1.1              =
-=============================================*/
-.grid_container_1_1 {
-  display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.grid_container_1_1 div {
-  width: 100%;
-  border-style: solid;
-  padding-top: ;
-  text-align: center;
-}
-
-.grid_container_1_1 img {
-  width: 250px;
-  height: auto;
-}
-
-.grid_container_1_1 p {
-  text-align: center;
-}
-
-.knapp_t {
-  background-color: #CBA328;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin-left: 50%;
-  margin-right: 50%;
-  cursor: pointer;
-  border-radius: 4px;
-}
-
-/*=============================================
-=              grid_container_2               =
-=============================================*/
-.grid_container_2 {
-  display: grid;
-  grid-template-columns: 33.33% 33.33% 33.33%;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.grid_container_2 div {
-  width: 100%;
-  padding: 20px; /*rundt teksten*/
-  border-style: solid;
-  padding-top: ;
-  text-align: center;
-}
-
-.what_1 {
-  background-color: #93B6DC;
-} 
-
-.what_2 {
-  background-color: #B2CBE6;
-} 
-
-.what_3 {
-  background-color: #93B6DC;
-} 
-
-/*=============================================
-=              grid_container_3               =
-=============================================*/
-.grid_container_3 {
+.grid_container_1_2 {
   display: grid;
   grid-template-columns: 50% 50%;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-.grid_container_3 div {
+.grid_container_1_2 div {
   width: 100%;
   padding: 20px; /*rundt teksten*/
-  border-style: solid;
+  border-style: ;
   padding-top: ;
   text-align: left;
 }
 
-.grid_container_3 img {
+.grid_container_1_2 img {
   width: 300px;
   height: auto;
 }
 
+.front_0 {
+  background-color: #e5e5e5;
+}
+
+.front_1 {
+  background-color: #2a2a2a;
+  color: white;
+}
+
+.front_2 {
+  background-color: #242494;
+  color: white;
+}
+
 .knapp_o {
-  background-color: #4CAF50;
-  border: none;
+  background-color: ;
+  border-style: solid solid none solid;
+  border-width: 0.2px;
+  border-color: white;
   color: white;
   padding: 15px 32px;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
   cursor: pointer;
-  border-radius: 4px;
+  border-radius: ;
   justify-content: center;
 }
 
-/*=============================================
-=               grid_container_4              =
-=============================================*/
 
-.grid_container_4 {
+/*=============================================
+=              grid_container_1_3               =
+=============================================*/
+.grid_container_1_3 {
   display: grid;
-  grid-template-areas: 'A B E E' 'C D E E';
+  grid-template-columns: 33.33% 33.33% 33.33%;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-.grid_container_4 div {
+.grid_container_1_3 div {
   width: 100%;
   padding: 20px; /*rundt teksten*/
-  border-style: solid;
+  border-style: ;
+  padding-top: ;
+  text-align: center;
+}
+.grid_container_1_3 img {
+  width: 150px;
+}
+
+
+.what_1 {
+  background-color: ;
+} 
+
+.what_2 {
+  background-color: ;
+} 
+
+.what_3 {
+  background-color: ;
+} 
+
+/*=============================================
+=              grid_container_1_4               =
+=============================================*/
+.grid_container_1_4 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.grid_container_1_4 div {
+  width: 100%;
+  padding: 20px; /*rundt teksten*/
+  border-style: ;
   padding-top: ;
   text-align: left;
 }
 
-.grid_container_4 div:nth-child(1) {
+.grid_container_1_4 img {
+  width: 300px;
+  height: auto;
+}
+
+.front_0 {
+  background-color: #e5e5e5;
+}
+
+.front_1 {
+  background-color: #2a2a2a;
+  color: white;
+}
+
+.front_2 {
+  background-color: #242494;
+  color: white;
+}
+
+.knapp_o {
+  background-color: ;
+  border-style: solid solid none solid;
+  border-width: 0.2px;
+  border-color: white;
+  color: white;
+  padding: 15px 32px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: ;
+  justify-content: center;
+}
+
+/*=============================================
+=            grid_container_1_5               =
+=============================================*/
+.grid_container_1_5 {
+  display: grid;
+  grid-template-columns: 33.33% 33.33% 33.33%;
+  gap: 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.grid_container_1_5 div {
+  width: 100%;
+  padding: 20px; /*rundt teksten*/
+  border-style: ;
+  padding-top: ;
+  text-align: center;
+}
+
+.grid_container_1_5 img {
+  width: 100%;
+  height: 100%;
+}
+
+/*=============================================
+=            grid_container_1_6               =
+=============================================*/
+
+.grid_container_1_6 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.grid_container_1_6 div {
+  width: 100%;
+  padding: 20px; /*rundt teksten*/
+  border-style: ;
+  padding-top: ;
+  text-align: center;
+}
+
+.fa-5x {
+  color: black;
+}
+
+.gallery_knapp {
+  color: yellow;
+  border-style: ;
+  border-width: ;
+  border-color: ;
+  color: ;
+  padding: 15px 32px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: ;
+}
+
+/*=============================================
+=               grid_container_2_1             =
+=============================================*/
+.grid_container_2_1 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: white;
+  grid-gap: 10px;
+}
+
+.grid_container_2_1 div {
+  width: 100%;
+  padding: 20px; /*rundt teksten*/
+  border-style: ;
+  padding: 50px 100px 50px 100px;
+  text-align: center;
+  background-color: #2a2a2a;
+}
+
+.knapp_g {
+  background-color: ;
+  border-style: solid solid none solid;
+  border-width: 0.2px;
+  border-color: black;
+  color: black;
+  padding: 15px 32px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: ;
+  justify-content: center;
+}
+
+.knapp_g a{
+  color: black;
+}
+
+/*=============================================
+=               grid_container_3_1              =
+=============================================*/
+.grid_container_3_1 {
+  display: grid;
+  grid-template-areas: 'A B E E' 'C D E E';
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #2a2a2a;
+  color: white;
+}
+
+/* unvisited link */ /* visited link */
+a.link_kontakt:link,
+a.link_kontakt:visited {
+  color: white;
+  text-decoration: none;
+}
+
+/* mouse over link */
+a.link_kontakt:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+.grid_container_3_1 h2{
+  color: white;
+}
+
+.grid_container_3_1 div {
+  width: 100%;
+  padding: 20px; /*rundt teksten*/
+  border-style: ;
+  padding: 20px;
+  text-align: center;
+}
+
+.grid_container_3_1 div:nth-child(1) {
   grid-area: A;
 }
 
-.grid_container_4 div:nth-child(2) {
+.grid_container_3_1 div:nth-child(2) {
   grid-area: B;
 }
 
-.grid_container_4 div:nth-child(3) {
+.grid_container_3_1 div:nth-child(3) {
   grid-area: C;
 }
 
-.grid_container_4 div:nth-child(4) {
+.grid_container_3_1 div:nth-child(4) {
   grid-area: D;
 }
 
-.grid_container_4 div:nth-child(5) {
+.grid_container_3_1 div:nth-child(5) {
   grid-area: E;
 }
 
@@ -295,37 +543,21 @@ footer {
 }
 
 /*=============================================
-=               grid_container_6              =
+=               grid_container_4_1              =
 =============================================*/
-.grid_container_6 {
+.grid_container_4_1 {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 100%;
   max-width: 1200px;
   margin: 0 auto;
+  background-color: #2a2a2a;
+  color: white;
 }
 
-.grid_container_6 div {
+.grid_container_4_1 div {
   width: 100%;
   padding: 20px; /*rundt teksten*/
-  border-style: solid;
-  padding-top: ;
-  text-align: left;
-}
-
-/*=============================================
-=               grid_container_7              =
-=============================================*/
-.grid_container_7 {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.grid_container_7 div {
-  width: 100%;
-  padding: 20px; /*rundt teksten*/
-  border-style: solid;
+  border-style: ;
   padding-top: ;
   text-align: left;
 }
