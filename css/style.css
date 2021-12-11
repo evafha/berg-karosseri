@@ -208,7 +208,7 @@ a.forside:visited {
 
 /* mouse over link */
 a.forside:hover {
-  color: red;
+  color: #F58F29;
   text-decoration: underline;
 }
 
@@ -531,7 +531,7 @@ a.link_kontakt:visited {
 
 /* mouse over link */
 a.link_kontakt:hover {
-  color: red;
+  color: #F58F29;
   text-decoration: underline;
 }
 
@@ -624,6 +624,10 @@ a.link_kontakt:hover {
 /*=============================================
 =                     Grids                   =
 =============================================*/
+@media (max-width: 750px) {
+  .grid_container_start_1 { 
+    grid-template-columns: repeat(1, 1fr); 
+  }
 
 @media (max-width: 900px) {
   .grid_container_1_1,
