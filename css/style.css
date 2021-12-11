@@ -13,10 +13,15 @@ body {
   min-height: 100%;
   position: absolute;
   float: left;
+  background-color: ;
 }
 
 h2 {
   text-align: center;
+}
+
+p {
+  color: ;
 }
 
 /*=============================================
@@ -37,13 +42,13 @@ h2 {
 
 .topnav {
   overflow: hidden; /*prevents scrollbars from appearing*/
-  background-color: yellow;
+  background-color: #7CB3C5;
 }
 
 .topnav a {
   float: left; /*https://developer.mozilla.org/en-US/docs/Web/CSS/float*/
   display: block; /*Takes up the full width available, with a new line before and after*/
-  color: red; /*Farge på tekst i navbar*/
+  color: white; /*Farge på tekst i navbar*/
   text-align: center;
   padding: 14px; /* skaper avstand mellom teksten: top, left, bottom, left*/
   text-decoration: none; /*fjerner understreking på link*/
@@ -52,7 +57,7 @@ h2 {
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: orange;
+  background-color: #000080;
   color: white;
 }
 
@@ -90,15 +95,15 @@ footer {
 }
 
 .footer_1 {
-  background-color: brown;
+  background-color: #93B6DC;
 } 
 
 .footer_2 {
-  background-color: burlywood;
+  background-color: #B2CBE6;
 } 
 
 .footer_3 {
-  background-color: burlywood;
+  background-color: #93B6DC;
 } 
   
 /*=============================================
@@ -107,7 +112,7 @@ footer {
 .grid_container_0 {
   display: grid;
   grid-template-columns: auto;
-  background-color: red;
+  background-color: ;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -164,7 +169,7 @@ footer {
 }
 
 .knapp_t {
-  background-color: #4CAF50;
+  background-color: #CBA328;
   border: none;
   color: white;
   padding: 15px 32px;
@@ -197,15 +202,15 @@ footer {
 }
 
 .what_1 {
-  background-color: brown;
+  background-color: #93B6DC;
 } 
 
 .what_2 {
-  background-color: burlywood;
+  background-color: #B2CBE6;
 } 
 
 .what_3 {
-  background-color: burlywood;
+  background-color: #93B6DC;
 } 
 
 /*=============================================
@@ -250,7 +255,7 @@ footer {
 
 .grid_container_4 {
   display: grid;
-  grid-template-columns: 25% 25%;
+  grid-template-areas: 'A B E E' 'C D E E';
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -263,11 +268,66 @@ footer {
   text-align: left;
 }
 
-.grid_container_5 {
-  position: relative;
+.grid_container_4 div:nth-child(1) {
+  grid-area: A;
+}
+
+.grid_container_4 div:nth-child(2) {
+  grid-area: B;
+}
+
+.grid_container_4 div:nth-child(3) {
+  grid-area: C;
+}
+
+.grid_container_4 div:nth-child(4) {
+  grid-area: D;
+}
+
+.grid_container_4 div:nth-child(5) {
+  grid-area: E;
+}
+
+.kart iframe{
+  border: none;
+  width: 450px;
+  height: 450px;
+}
+
+/*=============================================
+=               grid_container_6              =
+=============================================*/
+.grid_container_6 {
   display: grid;
-  grid-template-columns: 50%;
+  grid-template-columns: 50% 50%;
   max-width: 1200px;
+  margin: 0 auto;
+}
+
+.grid_container_6 div {
+  width: 100%;
+  padding: 20px; /*rundt teksten*/
+  border-style: solid;
+  padding-top: ;
+  text-align: left;
+}
+
+/*=============================================
+=               grid_container_7              =
+=============================================*/
+.grid_container_7 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.grid_container_7 div {
+  width: 100%;
+  padding: 20px; /*rundt teksten*/
+  border-style: solid;
+  padding-top: ;
+  text-align: left;
 }
 
 /*=============================================
