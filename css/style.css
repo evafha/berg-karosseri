@@ -217,7 +217,7 @@ a.forside:hover {
 =============================================*/
 .grid_container_start_1 {
   display: grid;
-  grid-template-columns: 33.33% 33.33% 33.33%;
+  grid-template-areas: 'A B C';
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -230,8 +230,21 @@ a.forside:hover {
   padding-top: ;
   text-align: center;
 }
+
 .grid_container_start_1 img {
   width: 150px;
+}
+
+.grid_container_start_1 div:nth-child(1) {
+  grid-area: A;
+}
+
+.grid_container_start_1 div:nth-child(2) {
+  grid-area: B;
+}
+
+.grid_container_start_1 div:nth-child(3) {
+  grid-area: C;
 }
   
 /*=============================================
@@ -326,19 +339,6 @@ a.forside:hover {
 .grid_container_1_3 img {
   width: 150px;
 }
-
-
-.what_1 {
-  background-color: ;
-} 
-
-.what_2 {
-  background-color: ;
-} 
-
-.what_3 {
-  background-color: ;
-} 
 
 /*=============================================
 =              grid_container_1_4               =
@@ -520,6 +520,7 @@ a.forside:hover {
   margin: 0 auto;
   background-color: #2a2a2a;
   color: white;
+  width: 100%;
 }
 
 /* unvisited link */ /* visited link */
@@ -625,9 +626,13 @@ a.link_kontakt:hover {
 =                     Grids                   =
 =============================================*/
 @media (max-width: 750px) {
-  .grid_container_start_1 { 
-    grid-template-columns: repeat(1, 1fr); 
+  .grid_container_3_1 {
+    grid-template-areas: 'A B' 'C D' 'E E';
   }
+  .grid_container_start_1 {
+    grid-template-areas: 'A' 'C' 'B';
+  }
+}
 
 @media (max-width: 900px) {
   .grid_container_1_1,
@@ -645,11 +650,11 @@ a.link_kontakt:hover {
     grid-template-columns: repeat(2, 1fr); 
   }
 
-  .topnav {
+.topnav {
     display: block;
   }
 
-  .topnav a{
+.topnav a{
     float: none;
     text-align: center;
   }
@@ -671,5 +676,9 @@ a.link_kontakt:hover {
   .grid_container_3_1,
   .grid_container_4_1 { 
     grid-template-columns: repeat(1, 1fr); 
+  }
+
+.grid_container_3_1 {
+    grid-template-areas: 'A' 'B' 'C' 'D' 'E';
   }
 }
