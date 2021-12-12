@@ -32,7 +32,7 @@ h2 {
 
 h3 {
   text-align: center;
-  color: #242494;
+  color: white;
   text-decoration: ;
 }
 
@@ -295,12 +295,12 @@ a.forside:hover {
   background-color: #e5e5e5;
 }
 
-.front_1 {
+.front_1 h2{
   background-color: #2a2a2a;
   color: white;
 }
 
-.front_2 {
+.front_2 h2{
   background-color: #242494;
   color: white;
 }
@@ -493,6 +493,14 @@ a.forside:hover {
   background-color: #2a2a2a;
 }
 
+.grid_container_2_1_1 {
+  display: grid;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: center;
+  text-align: center;
+}
+
 .knapp_g {
   background-color: ;
   border-style: solid solid none solid;
@@ -505,10 +513,9 @@ a.forside:hover {
   font-size: 16px;
   cursor: pointer;
   border-radius: ;
-  justify-content: center;
 }
 
-.knapp_g a{
+a.knapp_g {
   color: black;
 }
 
@@ -627,6 +634,7 @@ a.link_kontakt:hover {
 @media (max-width: 900px) {
 .topnav {
     display: block;
+    text-align: center;
   }
 
 .topnav a{
