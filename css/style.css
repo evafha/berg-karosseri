@@ -90,7 +90,7 @@ header {
   color: white; /*Farge på tekst i navbar*/
   padding: 14px; /* skaper avstand mellom teksten: top, left, bottom, left*/
   text-decoration: none; /*fjerner understreking på link*/
-  font-size: 20px;
+  font-size: 25px;
   padding-left: 40px;
   padding-right: 40px;
   letter-spacing: 1px;
@@ -123,6 +123,8 @@ a:hover img{
   margin: 0 auto;
   position: relative;
   background-color: #242494;
+  border-top: #242494;
+  border-top-style: solid;
 }
 
 .grid_container_footer div {
@@ -618,7 +620,24 @@ a.link_kontakt:hover {
   .topnav.responsive a {
     float: none;
     display: block;
-    text-align: left;
+    text-align: center;
+  }
+}
+
+@media (max-width: 900px) {
+.topnav {
+    display: block;
+  }
+
+.topnav a{
+    float: none;
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .topnav a{
+    display: inline-flex; /*https://stackoverflow.com/questions/27418104/whats-the-difference-between-displayinline-flex-and-displayflex*/
   }
 }
 
@@ -687,5 +706,9 @@ a.link_kontakt:hover {
 
 .grid_container_3_1 {
     grid-template-areas: 'A' 'B' 'C' 'D' 'E';
+  }
+
+  .topnav a{
+    display: inline-flex; /*https://stackoverflow.com/questions/27418104/whats-the-difference-between-displayinline-flex-and-displayflex*/
   }
 }
