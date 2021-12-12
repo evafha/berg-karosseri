@@ -214,6 +214,11 @@ a.forside:hover {
   text-decoration: underline;
 }
 
+.grid_container_start_1 div:hover {
+  box-sizing: border-box;
+  box-shadow: 2px 2px 2px 2px #F58F29;
+}
+
 /*=============================================
 =           grid_container_start_1             =
 =============================================*/
@@ -222,6 +227,7 @@ a.forside:hover {
   grid-template-areas: 'A B C';
   max-width: 1200px;
   margin: 0 auto;
+  grid-gap: 10px;
 }
 
 .grid_container_start_1 div {
@@ -231,6 +237,7 @@ a.forside:hover {
   border: ;
   padding-top: ;
   text-align: center;
+  background-color: ;
 }
 
 .grid_container_start_1 img {
